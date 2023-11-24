@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  width: 100%;
+  height: 100%;
+}
+body {
+  height: 100%;
+  width: 100%;
+}
+
+p,
+#heading,
+#heading3,
+select,
+input {
+  font-family: "Poppins", sans-serif;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+.wholeApp {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+#heading {
+  font-size: 50px;
+  margin: 0;
+  padding-bottom: 0;
+}
+#heading3 {
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 15px;
+}
+
+#navbar {
+  padding-top: 8%;
+  height: 100%;
+  padding: 20px;
+  width: 25%;
+  background-image: linear-gradient(#19323c, #0c1b21);
+  overflow: auto;
+  font-family: "Poppins", sans-serif;
+  box-shadow: rgba(6, 57, 112, 0.42) 0px 10px 20px -5px;
+  position: fixed;
+}
+#navlinks {
+  background-color: #19323c;
+  width: 95%;
+  align-self: center;
+  margin-left: 2%;
+  border-radius: 5%;
+}
+#navbar a {
+  display: block;
+  color: #f3f7f0;
+  padding: 16px;
+  text-decoration: none;
+}
+#navbar a#active {
+  background-color: #f3f7f0;
+  color: #14213d;
+}
+
+#navbar a:hover {
+  color: #14213d;
+  background-color: #f3f7f0;
+}
+.todoDiv {
+  margin-left: 10%;
+  margin-top: 3%;
+}

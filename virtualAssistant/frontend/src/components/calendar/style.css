@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+div {
+  font-family: "Poppins", sans-serif;
+}
+.calendar_body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  justify-content: center;
+  /* background-color: #fffcff; */
+  margin-top: 10px;
+  border-radius: 20px;
+  box-shadow: rgba(6, 57, 112, 0.42) 0px 10px 20px -5px;
+  width: 75%;
+  padding-bottom: 20px;
+}
+.button {
+  margin-right: 2.5px;
+  margin-left: 2.5px;
+  width: 75px;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  align-items: center;
+  justify-content: center;
+  background-color: #66bfbf;
+  border-radius: 8px;
+  width: 100px;
+  height: 40px;
+  margin: 10px;
+  /* margin-top: 20px; */
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+#header {
+  padding: 10px;
+  color: #d04a4a;
+  font-size: 35px;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+}
+
+#container {
+  width: 770px;
+}
+#weekdays {
+  width: 100%;
+  display: flex;
+  color: #247ba0;
+  justify-content: space-between;
+}
+#weekdays div {
+  width: 100px;
+  padding: 10px;
+}
+#calendar {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.day {
+  width: 100px;
+  height: 100px;
+  cursor: pointer;
+  box-sizing: border-box;
+  background-color: white;
+  margin: 5px;
+  box-shadow: 0px 0px 3px #cbd4c2;
+  display: flex;
+  flex-direction: column;
+}
+.dayVal {
+  padding: 5px;
+  margin-bottom: 6px;
+}
+.day:hover {
+  background-color: rgba(6, 57, 112, 0.087);
+}
+
+.day + .currentDay {
+  background-color: #15616d;
+  color: white;
+}
+.event {
+  font-size: 12px;
+  padding: 5px;
+  background-color: #247ba0;
+  color: white;
+  max-height: 55px;
+  overflow: hidden;
+  width: 100px;
+}
+.padding {
+  cursor: default !important;
+  background-color: rgba(31, 122, 140, 0.1) !important;
+  box-shadow: none !important;
+}
+#newEventModal,
+#deleteEventModal {
+  z-index: 20;
+  padding: 25px;
+  background-color: white;
+  box-shadow: 0px 0px 3px black;
+  border-radius: 10px;
+  width: 350px;
+  top: 100px;
+  left: calc(50% - 175px);
+  position: absolute;
+  font-family: sans-serif;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  padding-bottom: 20px;
+}
+#eventTitleInput {
+  height: 40px;
+  width: 90%;
+  border-radius: 8px;
+  border: 1px solid black;
+  padding: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+#eventTitleInput.error {
+  border: 2px solid red;
+}
+#cancelButton,
+#deleteButton {
+  background-color: rgb(240, 93, 94);
+}
+#saveButton,
+#closeButton {
+  background-color: rgb(57, 204, 204);
+}
+#eventText {
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#modalBackDrop {
+  top: 0px;
+  left: 0px;
+  z-index: 10;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+}
